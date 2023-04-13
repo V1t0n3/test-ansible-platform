@@ -1,6 +1,5 @@
-- name: Change file ownership, group and permissions
+- name: Create a directory if it does not exist
   ansible.builtin.file:
-    path: /etc/foo.conf
-    owner: foo
-    group: foo
-    mode: '0644'
+    path: /etc/some_directory
+    state: directory
+    mode: '0755'
