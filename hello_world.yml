@@ -1,4 +1,4 @@
-- hosts: Centos7
+- hosts: ec2-demo
   gather_facts: no
   become: yes
   remote_user: testuser
